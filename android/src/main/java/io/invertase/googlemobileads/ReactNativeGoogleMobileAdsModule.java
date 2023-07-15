@@ -194,4 +194,10 @@ public class ReactNativeGoogleMobileAdsModule extends ReactNativeModule {
           .runOnUiThread(() -> MobileAds.openDebugMenu(getCurrentActivity(), adUnit));
     }
   }
+
+  static int adHeight = 0;
+  @ReactMethod(isBlockingSynchronousMethod = true)
+  public int getAdHeight(){
+    return adHeight;
+  }
 }

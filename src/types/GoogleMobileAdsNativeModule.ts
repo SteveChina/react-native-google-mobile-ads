@@ -23,4 +23,5 @@ export interface GoogleMobileAdsNativeModule {
   rewardedInterstitialLoad: AdLoadFunction;
   rewardedInterstitialShow: AdShowFunction;
   openDebugMenu(adUnit: string): void;
+  getAdHeight(): number;
 }
